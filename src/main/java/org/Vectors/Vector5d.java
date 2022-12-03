@@ -1,5 +1,8 @@
 package org.Vectors;
 
+/**
+ * Класс вектора длинны 5
+ */
 public class Vector5d extends Vectors<Vector5d> {
     public Vector5d(double z, double x, double c, double b, double q) {
         coordinates = new double[5];
@@ -9,11 +12,10 @@ public class Vector5d extends Vectors<Vector5d> {
         coordinates[3] = b;
         coordinates[4] = q;
     }
-
     public Vector5d(double[] coordinates) {
         this.coordinates = coordinates;
     }
-
+    /*Методы для сложения, вычитания, сравнения, скалярного произведения векторов длины 5*/
     public Vector5d sumVectors(Vector5d v) {
         return new Vector5d(sum(this.getCoordinates(), v.getCoordinates()));
     }

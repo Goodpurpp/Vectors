@@ -1,5 +1,8 @@
 package org.Vectors;
 
+/**
+ * Интерфейс для базовых операций у векторов
+ */
 public interface VectorImpl<T> {
     T sumVectors(T b);
 

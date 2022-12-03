@@ -1,5 +1,8 @@
 package org.Vectors;
 
+/**
+ * Класс вектора размернсоти три
+ */
 public class Vector3d extends Vectors<Vector3d> {
 
     public Vector3d(double z, double x, double c) {
@@ -9,10 +12,16 @@ public class Vector3d extends Vectors<Vector3d> {
         coordinates[2] = c;
     }
 
-    public Vector3d(double[] coordinates) {
+    /**
+     * Конструктор для создания нового вектора после операций
+     * @param coordinates массив координат
+     */
+    private Vector3d(double[] coordinates) {
         this.coordinates = coordinates;
     }
-
+    /*
+    Методы для сложения, вычитания, сравнения, скалярного произведения векторов длины 3
+     */
     public Vector3d sumVectors(Vector3d v) {
         return new Vector3d(sum(this.getCoordinates(), v.getCoordinates()));
     }
